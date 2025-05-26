@@ -15,7 +15,6 @@ tl.from("#hello h1",{
     scrollTrigger:{
         trigger:"#hello",
         scroller:"body",
-        markers: true,
         scrub: 2,
         pin: true
     }
@@ -56,14 +55,13 @@ tl.to("#page1 .box1",{
 })
 
 tl.to("#page2 h1",{
-    transform: "translateX(-100%)",
-    delay:1,
+    transform: "translateX(-800%)",
     scrollTrigger:{
         trigger:"#page2",
         scroller:"body",
         markers:true,
         start:"top 0%",
-        end:"top -90%",
+        end:"top -150%",
         scrub: 2,
         pin:true
     }
