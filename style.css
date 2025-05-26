@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #14213d;
+    color: #ffffff;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+/* styling nav-bar component */
+.nav-bar{
+    /* background-color: red; */
+    display: flex;
+    padding: 30px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style-type: none;
+    gap:30px;
+}
+
+.nav-bar ul li{
+        padding: 6px 8px;
+        border-radius: 4px;
+}
+
+.nav-bar ul li:hover{
+    cursor: pointer;
+    background-color: #457b9d;
+}
+
+/* hero-section div*/
+.hero-section{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    gap: 30px;
+    white-space: nowrap;
+}
+
+.hero-section h1{
+    /* font-variant: small-caps; */
+    font-weight: 600;
+    font-size: 60px;
+    word-spacing: 4px;
+    background: linear-gradient(to right, #efffff, #80f1f2, #27bdea, #2477ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-section h3{
+    font-weight: 500;
+    background: linear-gradient(to right, #007FFF, #3399FF, #66B2FF, #99CCFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.box1{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: teal;
+}
+
+.box2{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #669bbc;
+}
+
+.box3{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #003049;
+}
