@@ -1,0 +1,106 @@
+/* Bebus Neue */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Unbounded:wght@200..900&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: "Be Vietnam Pro", sans-serif;
+    height: 100%;
+}
+
+#container{
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient( circle, #c1121f, #780000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #fdf0d5;
+    cursor: default;
+}
+
+#inner-container{
+    padding: 2rem 4rem;
+    height: 40vh;
+    width: 90vw;
+    border: 2px solid #fdf0d5;
+    background-color: #669bbc;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#inner-container h1{
+    font-family:"Bebas Neue", sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    color: #fdf0d5;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+
+#special-font1{
+    color: #003049;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+#inner-container button{
+    font-size: 24px;
+    border: 2px solid #fdf0d54c;
+    border-radius: 8px;
+    font-weight: 500;
+    background-color: #0030491c;
+    color: #fdf0d5;
+    padding: 12px 20px;
+}
+
+#inner-container button:hover{
+    border: 2px solid #fdf0d5;
+    transition: width 1s, border 0.5s;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  /* Styles for iPad Pro 12.9" */
+
+  #inner-container{
+    height: 40vh;
+    padding: 20px 24px;
+    text-align: center;
+  }
+
+  #inner-container h1{
+    font-size: 4rem;
+    overflow: hidden;
+  }
+}
+
+
+@media only screen and (max-width: 524px) and (orientation: portrait) {
+
+  /* Styles for iPhone 12 Pro Max Portrait */
+
+  #inner-container{
+    height: 40vh;
+    padding: 20px 24px;
+    text-align: center;
+
+  }
+
+  #inner-container h1{
+    font-size: 3rem;
+    overflow: hidden;
+
+  }
+}
+
