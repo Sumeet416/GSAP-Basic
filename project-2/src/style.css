@@ -12,6 +12,7 @@ html, body{
   height: 100%;
   background: #111;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 #app{
@@ -20,12 +21,16 @@ html, body{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 #app h1{
   font-size: 100px;
-  /* background-color: teal; */
   overflow: hidden;
+  text-align: center;
+  line-height: 1.1;
+  word-break: break-word;
+  padding: 0 20px;
 }
 
 #app h1 span{
@@ -41,6 +46,7 @@ html, body{
   justify-content: center;
   align-items: center;
   gap: 30px;
+  padding: 0 20px;
 }
 
 .btn{
@@ -50,8 +56,156 @@ html, body{
   border-radius: 8px;
   font-size: 20px;
   cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+  min-width: 120px;
+  text-align: center;
 }
 
 .btn:hover{
   border: 1.5px solid #ffffff4c;
+  transform: translateY(-2px);
+}
+
+.btn:active{
+  transform: translateY(0);
+}
+
+/* Tablet styles (768px and below) */
+@media screen and (max-width: 768px) {
+  #app h1{
+    font-size: 70px;
+    padding: 0 15px;
+  }
+  
+  #buttons{
+    top: 25%;
+    gap: 20px;
+    padding: 0 15px;
+  }
+  
+  .btn{
+    font-size: 18px;
+    padding: 12px 18px;
+    min-width: 100px;
+  }
+}
+
+/* Mobile styles (480px and below) */
+@media screen and (max-width: 480px) {
+  #app h1{
+    font-size: 50px;
+    padding: 0 10px;
+  }
+  
+  #buttons{
+    top: 20%;
+    gap: 15px;
+    flex-direction: column;
+    height: auto;
+    padding: 0 20px;
+  }
+  
+  .btn{
+    font-size: 16px;
+    padding: 12px 20px;
+    width: 100%;
+    max-width: 200px;
+    min-width: auto;
+  }
+}
+
+/* Small mobile styles (360px and below) */
+@media screen and (max-width: 360px) {
+  #app h1{
+    font-size: 40px;
+    padding: 0 10px;
+  }
+  
+  #buttons{
+    top: 18%;
+    gap: 12px;
+    padding: 0 15px;
+  }
+  
+  .btn{
+    font-size: 14px;
+    padding: 10px 16px;
+    max-width: 180px;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  #app{
+    flex-direction: row;
+    padding: 20px;
+  }
+  
+  #app h1{
+    font-size: 40px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #buttons{
+    position: relative;
+    top: auto;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    gap: 10px;
+    padding: 0 20px;
+  }
+  
+  .btn{
+    font-size: 14px;
+    padding: 8px 16px;
+    min-width: 100px;
+    width: auto;
+  }
+}
+
+/* Very small screens (below 320px) */
+@media screen and (max-width: 320px) {
+  #app h1{
+    font-size: 32px;
+  }
+  
+  .btn{
+    font-size: 13px;
+    padding: 8px 12px;
+    max-width: 160px;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .btn{
+    padding: 15px 20px;
+    font-size: 16px;
+    min-height: 44px; /* Minimum touch target size */
+  }
+  
+  .btn:hover{
+    transform: none; /* Remove hover effects on touch devices */
+  }
+  
+  .btn:active{
+    background: #222;
+    border-color: #ffffff6c;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .btn{
+    border-width: 0.5px;
+  }
+  
+  .btn:hover{
+    border-width: 1px;
+  }
 }
