@@ -82,7 +82,7 @@ animation2.addEventListener('click', () => {
         delay: 0.5,
         opacity: 0,
         stagger: -0.15,
-    }, 0.5) // Start 0.5 seconds after the timeline begins
+    },0) // Start 0.5 seconds after the timeline begins
 })
 
 animation3.addEventListener('click', () => {
